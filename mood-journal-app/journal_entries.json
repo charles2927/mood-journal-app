@@ -1,0 +1,22 @@
+[
+    {
+        "entry": "Had a good day today!",
+        "sentiment": "Positive \u00f0\u0178\u02dc\u0160"
+    },
+    {
+        "entry": "Feeling a bit down.",
+        "sentiment": "Negative \u00f0\u0178\u02dc\u0178"
+    },
+    {
+        "entry": "I had a wonderful day with my friends. We went out for dinner, and it was amazing!",
+        "sentiment": "Positive \ud83d\ude0a"
+    },
+    {
+        "entry": "feeling like missing my family",
+        "sentiment": "Negative \ud83d\ude1f"
+    },
+    {
+        "entry": "dad and mom are fighting and im doing project over here and its annoying perhaps i dont know my mood ",
+        "sentiment": "Negative \ud83d\ude1f"
+    }
+]

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Mood Journal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Mood Journal</h1>
+        <form method="POST" action="/">
+            <textarea name="entry" placeholder="Write your thoughts here..." required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+        {% if last_entry %}
+            <h2>Your last entry:</h2>
+            <p>{{ last_entry }}</p>
+            <h3>Sentiment Analysis Result:</h3>
+            <p>{{ sentiment }}</p>
+        {% endif %}
+
+        <h2>Past Entries</h2>
+        <ul>
+            {% for entry in entries %}
+                <li>{{ entry['entry'] }} - Sentiment: {{ entry['sentiment'] }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
